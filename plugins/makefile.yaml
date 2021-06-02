@@ -4,15 +4,15 @@ metadata:
   name: makefile
 spec:
   platforms:
-  - sha256: c548f94d8efd1fb8aa35a54b7e5cdb64ae012447122d9704f3cee4163bbbe9c3
-    uri: https://github.com/danisla/kubefunc/archive/v1.0.1.zip
-    bin: pod-logs.sh
+  - sha256: 15ef06a9a13e91f75948faabb4ffb724617fa0ed792024a51a7b427da412c2f0
+    uri: https://github.com/JackySo-24x7classroom/public-resources/archives/kubectl-plugin-1.0.0.zip
+    bin: makefile.sh
     files:
-    - from: "/*/pod-logs/*"
+    - from: "/*/makefile/*"
       to: "."
     selector:
       matchExpressions:
-      - {key: os, operator: In, values: [darwin, linux]}
-  version: "v1.0.1"
-  homepage: https://github.com/danisla/kubefunc
-  shortDescription: Display a list of pods to get logs from
+      - {key: os, operator: In, values: [linux]}
+  version: "v1.0.0"
+  homepage: https://github.com/JackySo-24x7classroom/public-resources
+  shortDescription: Select Makefiles with kubectl work and display its run options and variables
