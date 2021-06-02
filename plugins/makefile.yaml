@@ -5,7 +5,7 @@ metadata:
 spec:
   platforms:
   - sha256: 15ef06a9a13e91f75948faabb4ffb724617fa0ed792024a51a7b427da412c2f0
-    uri: https://github.com/JackySo-24x7classroom/public-resources/archives/kubectl-plugin-1.0.0.zip
+    uri: https://github.com/JackySo-24x7classroom/public-resources/blob/main/archives/kubectl-plugin-1.0.0.zip
     bin: makefile.sh
     files:
     - from: "/*/makefile/*"

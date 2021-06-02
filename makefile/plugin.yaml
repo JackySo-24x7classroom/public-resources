@@ -1,0 +1,46 @@
+name: "makefile"
+shortDesc: "List of Makefiles contain kubectl operations and select to display"
+longDesc: >
+  $  /tmp/kubectl-makefile
+ 1) Makefile-gcloud							  11) Makefile-crossplane
+ 2) Makefile-minikube							  12) Makefile-k8s-obs-node-problem
+ 3) Makefile-obs-metrics						  13) Makefile-k8s-istio
+ 4) Makefile-cicd-tekton-github						  14) Makefile-k8s-backup-restore
+ 5) Makefile-kind							  15) Makefile-gke-externaldns
+ 6) Makefile-traefik-ingress						  16) Makefile-k8s-ClusterApi
+ 7) Makefile-k8s-obs-kubevious						 
+ 8) Makefile-k8s-toolkits						 
+ 9) Makefile-k8s-kubectl						  
+10) Makefile-k8s-obs-jaeger						
+Input your choice 1
+Run help in Makefile-gcloud
+
+ Choose a command run
+
+	install-howto                            Howto install Google Cloud SDK
+	0-install-ubuntu                         Install Google Cloud SDK onto Ubuntu/Debian
+	0-install-redhat                         Install Google Cloud SDK onto Redhat/CentOS/Fedora
+	0-install-linux                          Install 64 bit Google Cloud SDK onto Linux
+	0-version                                Check version of install SDK gcloud utility
+	1-init                                   Run gcloud init (skip dignostic) and logon
+	2-setup-preferences                      Configure gcloud preferences zone and region
+	2-login                                  Login
+	3a-create-cluster                        Create a cluster and get the credentials for kubectl
+	3b-create-cluster                        Create a GKE Cluster (overrides preferences)
+	cleanup                                  Delete GKE cluster
+	utl-switch-gke                           Switch to using the GKE cluster
+	utl-server-config                        Get Cluster Config
+	utl-config-account                       Get Config info - account
+	utl-list-disks                           List disks in zone $(ZONE)
+	utl-remove-disk                          Remove unused disks - avoid reaching the quota
+	utl-ssh-vm                               SSH into VM
+	
+	CLUSTER                                  kubernetic
+	NODE                                     1
+	PROJECT_ID                               cal-877-69f442c33d57
+	REGION                                   europe-west1
+	VM                                       calab-notebook
+	ZONE                                     europe-west1-b
+Example:
+    kubectl makefile
+command: ./makefile.sh
