@@ -13,6 +13,6 @@ spec:
     selector:
       matchExpressions:
       - {key: os, operator: In, values: [linux]}
-  version: "v1.0.1"
+  version: "v1.1.1"
   homepage: https://github.com/JackySo-24x7classroom/public-resources
   shortDescription: Select Makefiles with kubectl work and display its run options and variables
